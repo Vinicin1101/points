@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css">
+
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="eraser option">
+                <input type="checkbox" name="eraser" id="borracha">
+                <label for="borracha">Borracha: </label>
+
+                <br>
+
+                <input type="range" name="eraser-size" id="size-borracha" min="1" max="100" value="20" class="slider">
+
+                <span id="value-borracha" class="value">20px</span>
+            </div>
+
+            <label for="size-ponto">Pontos:</label>
+            <input type="range" name="point-size" id="size-ponto" min="1" max="100" value="10" class="slider">
+
+            <span id="value-ponto" class="value">10px</span>
+        </div>
+
+        <div id="area2">
+            <div class="obj" id="eraser"></div>
+            Area de pontos
+        </div>
+    </body>
+
+    <script src="script.js"></script>
+</html>
